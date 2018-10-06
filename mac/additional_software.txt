@@ -1,0 +1,6 @@
+This is a list of additional software to install, that can't be installed via Homebrew:
+-Evernote
+-Fusion 360
+-Matlab
+-OneSafe
+-Parallels

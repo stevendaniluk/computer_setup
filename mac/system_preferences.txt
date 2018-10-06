@@ -1,0 +1,30 @@
+This is a list of various system related settings, that can be configured via "System Preferences".
+
+
+Trackpad
+-Point & Click
+	-Look up & data detectors: False
+	-Secondary click: True, click or tap with two fingers
+	-Tap to click: True
+	-Tracking speed: 4/10
+Scroll & Zoom
+	-Scroll direction natural: True
+	-Zoom in or out: True
+	-Smart zoom: True
+	-Rotate: True
+More Genstures:
+	-Swipe between pages: True, Scroll left or right with two fingers
+	-Swipe between full-screen apps: True, Swipe left or right with four fingers
+	-Notification Center: True
+	-Mission Control: True, Swipe up with four fingers
+	-App Expose: True, Swipe down with four fingers
+	-Launchpad: False
+	-Show Desktop: True
+
+App Store
+-Automatically check for updates: True
+	-Download newly available updates in the background: True
+	-Install app updates: True
+	-Install OS X updates: False
+	-Install system data files and security updates: True
+-Automaticlly download apps purchased on other Maxs: False
