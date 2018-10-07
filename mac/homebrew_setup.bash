@@ -6,6 +6,8 @@ display_usage() {
   echo -e "Usage:  $0 [OPTION...] "
   echo -e "   "
   echo -e "   --skip-homebrew-install: true skips installing homebrew, but installs packages"
+  echo -e "   --skip-casks: true skips installing all casks
+  echo -e "   --skip-apps: true skips installing all apps
   echo -e ""
 }
 
@@ -13,6 +15,8 @@ display_usage() {
 # See this Stack Exchange post for details
 # https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash
 SKIP_INSTALL=0
+SKIP_CASKS=0
+SKIP_APPS=0
 for i in "$@"
 do
 case $i in
@@ -24,65 +28,80 @@ case $i in
   SKIP_INSTALL=1
   shift # past argument=value
   ;;
+  --skip-casks)
+  SKIP_CASKS=1
+  shift # past argument=value
+  ;;
+  --skip-apps)
+  SKIP_APPS=1
+  shift # past argument=value
+  ;;
   *)
-      # unknown option
+    # unknown option
   ;;
 esac
 done
 
 # Handle HomeBrew installation
 if [ "$SKIP_INSTALL" == "0" ]; then
-    echo "Installing homebrew..."
-    #/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    echo "Homebrew installation complete"
+  echo "Installing homebrew..."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  echo "Homebrew installation complete"
 else
-    echo "Skipping homebrew install"
+  echo "Skipping homebrew install"
 fi
 
 # Install casks
-echo "Installing all casks..."
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-casks=(
-  arduino
-  atom
-  caffeine
-  cure
-  dropbox
-  firefox
-  flux
-  google-backup-and-sync
-  insomniax
-  nordvpn
-  osxfuse
-  slack
-  skype
-  spectacle
-  sublime-text
-  teamviewer
-  utorrent
-  vlc
-)
-brew cask install ${casks[@]}
-echo "All casks installed"
+if [ "$SKIP_CASKS" == "0" ]; then
+  echo "Installing all casks..."
+  export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+  casks=(
+    arduino
+    atom
+    caffeine
+    ultimaker-cura
+    dropbox
+    firefox
+    flux
+    google-backup-and-sync
+    insomniax
+    nordvpn
+    osxfuse
+    slack
+    skype
+    spectacle
+    sublime-text
+    teamviewer
+    vlc
+  )
+  brew cask install ${casks[@]}
+  echo "All casks installed"
+else
+  echo "Skipping installation of casks"
+fi
 
 # Install apps
-echo ?"Installing all apps..."
-apps=(
-  cmake
-  dark-mode
-  git
-  git bash-completion
-  htop
-  imagemagick
-  mas
-  speedtest-cli
-  ssh-copy-id
-  sshfs
-  thefuck
-  tree
-  wget
-)
+if [ "$SKIP_INSTALL" == "0" ]; then
+  echo ?"Installing all apps..."
+  apps=(
+    cmake
+    dark-mode
+    git
+    git bash-completion
+    htop
+    imagemagick
+    mas
+    speedtest-cli
+    ssh-copy-id
+    sshfs
+    thefuck
+    tree
+    wget
+  )
 brew install ${apps[@]}
-echo "All apps installed"
+  echo "All apps installed"
+else
+  echo "Skipping installation of apps"
+fi
 
 echo "Done!"

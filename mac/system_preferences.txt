@@ -27,4 +27,4 @@ App Store
 	-Install app updates: True
 	-Install OS X updates: False
 	-Install system data files and security updates: True
--Automaticlly download apps purchased on other Maxs: False
+-Automaticlly download apps purchased on other Macs: False

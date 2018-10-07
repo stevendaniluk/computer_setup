@@ -7,4 +7,3 @@ apm install \
   minimap \
   minimap-highlight-selected \
   platformio-ide-terminal \
-  whitespace
