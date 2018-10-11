@@ -3,7 +3,9 @@
 # ------------------------------------------------------------
 
 # Set Leading Message To Display
-export PS1="\u:\W$ "
+green=$(tput setaf 10)
+reset=$(tput sgr0)
+export PS1="\[$green\]\u:\W$ \[$reset\]"
 
 # Set Initial Working Diretory
 cd ~
