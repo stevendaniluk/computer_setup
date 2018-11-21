@@ -4,6 +4,7 @@
 echo "Installing Atom editor packages"
 apm install \
   highlight-selected \
+  language-cmake \
   minimap \
   minimap-highlight-selected \
   platformio-ide-terminal \
