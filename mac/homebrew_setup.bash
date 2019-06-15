@@ -84,6 +84,7 @@ fi
 if [ "$SKIP_INSTALL" == "0" ]; then
   echo ?"Installing all apps..."
   apps=(
+    clang-format
     cmake
     dark-mode
     git
