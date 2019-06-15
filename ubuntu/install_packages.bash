@@ -28,6 +28,7 @@ $SUDO apt-get upgrade -y
 # (thefuck requires python3-dev and python3-pip)
 $SUDO apt-get install -y \
   atom \
+  clang-format \
   firefox \
   git \
   htop \
