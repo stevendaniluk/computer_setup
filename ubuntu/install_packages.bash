@@ -28,12 +28,17 @@ $SUDO apt-get upgrade -y
 # (thefuck requires python3-dev and python3-pip)
 $SUDO apt-get install -y \
   atom \
+  can-utils \
   clang-format \
+  cloc \
   firefox \
   git \
+  graphviz \
   htop \
   imagemagick \
+  kcachegrind \
   nano \
+  nfs-common \
   python3-dev \
   python3-pip \
   sshfs \
@@ -41,6 +46,7 @@ $SUDO apt-get install -y \
   terminator \
   thefuck \
   tree \
+  valgrind \
   vlc
 
 # Have to install thefuck in a special way
