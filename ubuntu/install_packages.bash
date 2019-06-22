@@ -39,6 +39,7 @@ $SUDO apt-get install -y \
   kcachegrind \
   nano \
   nfs-common \
+  openssh-server \
   python3-dev \
   python3-pip \
   sshfs \
