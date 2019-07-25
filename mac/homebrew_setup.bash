@@ -62,8 +62,8 @@ if [ "$SKIP_CASKS" == "0" ]; then
     ultimaker-cura
     dropbox
     firefox
+    flash-npapi
     flux
-    google-backup-and-sync
     insomniax
     nordvpn
     osxfuse
@@ -93,6 +93,7 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     htop
     imagemagick
     mas
+    nmap
     speedtest-cli
     ssh-copy-id
     sshfs

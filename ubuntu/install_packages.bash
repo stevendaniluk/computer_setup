@@ -27,6 +27,7 @@ $SUDO apt-get upgrade -y
 # Install all our packages
 # (thefuck requires python3-dev and python3-pip)
 $SUDO apt-get install -y \
+  arduino \
   atom \
   can-utils \
   clang-format \
@@ -36,9 +37,11 @@ $SUDO apt-get install -y \
   graphviz \
   htop \
   imagemagick \
+  isc-dhcp-server \
   kcachegrind \
   nano \
   nfs-common \
+  nmap \
   openssh-server \
   python3-dev \
   python3-pip \
