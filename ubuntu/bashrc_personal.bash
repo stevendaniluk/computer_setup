@@ -27,6 +27,21 @@ alias .....='cd ../../../../'               # Go back 4 directory levels
 
 alias update_all='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
 
+# Function for formatting .h, .hpp, and .cpp files with clang
+function format_cpp_code() {
+  DIR=${1%/}
+  if [ -z "$DIR" ]; then
+    DIR="$(pwd)"
+  fi
+
+  for filename in $DIR/*.{h,hpp,cpp}; do
+    if [ -f "$filename" ]; then
+      echo "Formatting "$filename
+      clang-format -i $filename
+    fi
+  done
+}
+
 # ------------------------------------------------------------
 # ROS Setup
 # ------------------------------------------------------------
@@ -39,6 +54,7 @@ alias update_all='sudo apt-get update && sudo apt-get upgrade && sudo apt-get di
 
 # Aliases
 alias rviz='rosrun rviz rviz'
+alias display_frames='rosrun tf view_frames && display frames.pdf'
 alias print_ros_network='printf "ROS_MASTER_URI: %s\nROS_HOSTNAME: %s\nROS_IP: %s\n" "$ROS_MASTER_URI" "$ROS_HOSTNAME" "$ROS_IP"'
 
 # Setup network (Master)
