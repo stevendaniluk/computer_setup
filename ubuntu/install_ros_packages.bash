@@ -9,7 +9,7 @@ fi
 $SUDO sudo apt-get update
 
 $SUDO apt-get install -y \
-  ros-kinetic-imu-filter-madgwick \
-  ros-kinetic-rosserial-arduino \
-  ros-kinetic-rosserial-server \
-  ros-kinetic-rviz-imu-plugin
+  ros-melodic-imu-filter-madgwick \
+  ros-melodic-rosserial-arduino \
+  ros-melodic-rosserial-server \
+  ros-melodic-rviz-imu-plugin

@@ -46,9 +46,9 @@ function format_cpp_code() {
 # ROS Setup
 # ------------------------------------------------------------
 
-# Source the setup.bash 
-#source /opt/ros/kinetic/setup.bash
-  
+# Source the setup.bash
+#source /opt/ros/melodic/setup.bash
+
 # Source the catkin workspace
 #source ~/ros_ws/devel/setup.bash
 

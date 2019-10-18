@@ -15,14 +15,14 @@ $SUDO apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E3
 # Installation
 echo "Installing ROS desktop full"
 $SUDO apt-get update
-$SUDO apt-get install ros-kinetic-desktop-full
+$SUDO apt-get install ros-melodic-desktop-full
 
 $SUDO rosdep init
 rosdep update
 
 # Workspace setup
 echo "Setting up new workspace"
-source /opt/ros/kinetic/setup.bash
+source /opt/ros/melodic/setup.bash
 
 mkdir -p ~/ros_ws/src
 cd ~/ros_ws
