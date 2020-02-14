@@ -55,3 +55,8 @@ $SUDO apt-get install -y \
 
 # Have to install thefuck in a special way
 $SUDO pip3 install thefuck
+
+SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+# Add the terminator config file
+cp -r $SRC_DIR/config/terminator ~/.config/
