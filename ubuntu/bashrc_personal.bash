@@ -29,17 +29,23 @@ alias update_all='sudo apt-get update && sudo apt-get upgrade && sudo apt-get di
 
 # Function for formatting .h, .hpp, and .cpp files with clang
 function format_cpp_code() {
-  DIR=${1%/}
-  if [ -z "$DIR" ]; then
-    DIR="$(pwd)"
-  fi
+  TARGET=${1%/}
 
-  for filename in $DIR/*.{h,hpp,cpp}; do
-    if [ -f "$filename" ]; then
-      echo "Formatting "$filename
-      clang-format -i $filename
+  if [ -f "$TARGET" ]; then
+    echo "Formatting "$TARGET
+    clang-format -i $TARGET
+  else
+    if [ -z "$TARGET" ]; then
+      TARGET="$(pwd)"
     fi
-  done
+
+    for filename in $TARGET/*.{h,hpp,cpp}; do
+      if [ -f "$filename" ]; then
+        echo "Formatting "$filename
+        clang-format -i $filename
+      fi
+    done
+  fi
 }
 
 # ------------------------------------------------------------
