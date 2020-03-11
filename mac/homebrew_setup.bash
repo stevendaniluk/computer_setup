@@ -59,6 +59,7 @@ if [ "$SKIP_CASKS" == "0" ]; then
     arduino
     atom
     caffeine
+    discord
     ultimaker-cura
     dropbox
     firefox
