@@ -6,6 +6,7 @@ apm install \
   file-types \
   highlight-selected \
   language-cmake \
+  language-matlab \
   minimap \
   minimap-highlight-selected \
   platformio-ide-terminal \

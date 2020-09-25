@@ -49,6 +49,7 @@ $SUDO apt-get install -y \
   sublime-text \
   terminator \
   thefuck \
+  tmux \
   tree \
   valgrind \
   vlc
