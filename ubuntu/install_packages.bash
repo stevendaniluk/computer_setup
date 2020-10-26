@@ -29,6 +29,7 @@ $SUDO apt-get upgrade -y
 $SUDO apt-get install -y \
   arduino \
   atom \
+  atop \
   can-utils \
   clang-format \
   cloc \
@@ -37,6 +38,7 @@ $SUDO apt-get install -y \
   graphviz \
   htop \
   imagemagick \
+  iotop \
   isc-dhcp-server \
   kcachegrind \
   nano \
@@ -47,6 +49,7 @@ $SUDO apt-get install -y \
   python3-pip \
   sshfs \
   sublime-text \
+  sysstat \
   terminator \
   thefuck \
   tmux \
