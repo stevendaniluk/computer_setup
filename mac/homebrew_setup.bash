@@ -95,6 +95,7 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     imagemagick
     mas
     nmap
+    octave
     speedtest-cli
     ssh-copy-id
     sshfs

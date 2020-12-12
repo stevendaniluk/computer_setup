@@ -44,6 +44,7 @@ $SUDO apt-get install -y \
   nano \
   nfs-common \
   nmap \
+  octave \
   openssh-server \
   python3-dev \
   python3-pip \
