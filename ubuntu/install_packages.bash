@@ -11,22 +11,23 @@ fi
 ##############################
 
 # Prep for Sublime editor
-$SUDO wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-$SUDO echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+$SUDO wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | $SUDO apt-key add -
+$SUDO echo "deb https://download.sublimetext.com/ apt/stable/" | $SUDO tee /etc/apt/sources.list.d/sublime-text.list
 
 # Prep for Atom editor
-$SUDO add-apt-repository ppa:webupd8team/atom
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | $SUDO apt-key add -
+echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" | $SUDO tee /etc/apt/sources.list.d/atom.list
 
 # Prep for Terminator
 $SUDO add-apt-repository ppa:gnome-terminator
 
 # Update and upgrade!
-$SUDO sudo apt-get update
-$SUDO apt-get upgrade -y
+$SUDO sudo apt update
+$SUDO apt upgrade -y
 
 # Install all our packages
 # (thefuck requires python3-dev and python3-pip)
-$SUDO apt-get install -y \
+$SUDO apt install -y \
   arduino \
   atom \
   atop \
