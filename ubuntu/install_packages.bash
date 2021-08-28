@@ -19,7 +19,8 @@ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | $SUDO apt-key add -
 echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" | $SUDO tee /etc/apt/sources.list.d/atom.list
 
 # Prep for Terminator
-$SUDO add-apt-repository ppa:gnome-terminator
+# PPA taken from the install instructions on the terminator repo for Ubuntu 20.04
+$SUDO add-apt-repository ppa:mattrose/terminator
 
 # Update and upgrade!
 $SUDO sudo apt update
