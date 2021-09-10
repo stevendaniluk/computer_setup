@@ -30,5 +30,5 @@ alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
 alias ....='cd ../../../'                   # Go back 3 directory levels
 
-alias VM_start="prlctl start {144ea655-2300-4ad7-af5b-9e44bd2dd43b}"
-alias VM_enter="prlctl enter {144ea655-2300-4ad7-af5b-9e44bd2dd43b}"
+alias disable_lid_sleep="sudo pmset -a disablesleep 1"
+alias enable_lid_sleep="sudo pmset -a disablesleep 0"
