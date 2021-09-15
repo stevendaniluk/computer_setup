@@ -30,6 +30,7 @@ $SUDO apt install -y \
   can-utils \
   clang-format \
   cloc \
+  cmake \
   firefox \
   git \
   graphviz \
