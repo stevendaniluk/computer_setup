@@ -54,7 +54,8 @@ $SUDO apt install -y \
   tmux \
   tree \
   valgrind \
-  vlc
+  vlc \
+  wireshark
 
 # Have to install thefuck in a special way
 $SUDO pip3 install thefuck
