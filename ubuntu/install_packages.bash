@@ -23,7 +23,6 @@ $SUDO sudo apt update
 $SUDO apt upgrade -y
 
 # Install all our packages
-# (thefuck requires python3-dev and python3-pip)
 $SUDO apt install -y \
   arduino \
   atop \
@@ -57,8 +56,11 @@ $SUDO apt install -y \
   vlc \
   wireshark
 
-# Have to install thefuck in a special way
-$SUDO pip3 install thefuck
+# Install python packages
+pip install \
+  cantools \
+  numpy \
+  thefuck
 
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
