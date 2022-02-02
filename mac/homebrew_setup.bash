@@ -66,8 +66,8 @@ if [ "$SKIP_CASKS" == "0" ]; then
     flash-npapi
     flux
     insomniax
+    macfuse
     nordvpn
-    osxfuse
     slack
     skype
     spectacle
@@ -98,7 +98,6 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     octave
     speedtest-cli
     ssh-copy-id
-    sshfs
     thefuck
     tree
     wget
