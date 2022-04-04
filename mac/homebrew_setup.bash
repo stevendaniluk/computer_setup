@@ -67,12 +67,9 @@ if [ "$SKIP_CASKS" == "0" ]; then
     flux
     insomniax
     macfuse
-    nordvpn
     slack
-    skype
     spectacle
     sublime-text
-    teamviewer
     vlc
   )
   brew cask install ${casks[@]}
@@ -88,7 +85,6 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     clang-format
     cloc
     cmake
-    dark-mode
     git
     git bash-completion
     htop

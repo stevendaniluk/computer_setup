@@ -30,5 +30,7 @@ alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
 alias ....='cd ../../../'                   # Go back 3 directory levels
 
+alias homebrew_update_all="brew update; brew upgrade; brew upgrade --cask --greedy"
+
 alias disable_lid_sleep="sudo pmset -a disablesleep 1"
 alias enable_lid_sleep="sudo pmset -a disablesleep 0"
