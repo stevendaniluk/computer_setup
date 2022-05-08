@@ -10,8 +10,7 @@ export PS1="\[$green\]\u:\W$ \[$reset\]"
 # Set Initial Working Diretory
 cd ~
 
-# Set the default editor, and add TextMate to the path
-export PATH="$HOME/Misc.:$PATH" 
+# Set the default editor
 export EDITOR="subl -n -w"
 
 # Use thefuck package for annoying command line mistakes
