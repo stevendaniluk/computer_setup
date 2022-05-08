@@ -21,6 +21,9 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+# Homebrew setup
+export PATH="/usr/local/sbin:$PATH"
+
 # ------------------------------------------------------------
 # Shortcuts
 # ------------------------------------------------------------
