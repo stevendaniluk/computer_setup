@@ -30,7 +30,6 @@ $SUDO apt install -y \
   clang-format \
   cloc \
   cmake \
-  firefox \
   git \
   graphviz \
   htop \
@@ -38,13 +37,10 @@ $SUDO apt install -y \
   iotop \
   isc-dhcp-server \
   kcachegrind \
-  nano \
   nfs-common \
   nmap \
   octave \
   openssh-server \
-  python3-dev \
-  python3-pip \
   sshfs \
   sublime-text \
   sysstat \
@@ -70,4 +66,5 @@ cp -r $SRC_DIR/config/terminator ~/.config/
 # Lines below are for optional Atom editor installation
 # wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | $SUDO apt-key add -
 # echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" | $SUDO tee /etc/apt/sources.list.d/atom.list
+# $SUDO sudo apt update
 # $SUDO apt install -y atom
