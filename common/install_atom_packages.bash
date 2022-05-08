@@ -8,5 +8,4 @@ apm install \
   language-cmake \
   language-matlab \
   minimap \
-  minimap-highlight-selected \
-  platformio-ide-terminal \
+  minimap-highlight-selected
