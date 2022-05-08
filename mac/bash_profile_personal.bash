@@ -2,10 +2,11 @@
 # Custom Environment Settings
 # ------------------------------------------------------------
 
-# Set Leading Message To Display
+# Set leading message to display "user@hostname:directory" with matching colours
 green=$(tput setaf 10)
+blue=$(tput setaf 4)
 reset=$(tput sgr0)
-export PS1="\[$green\]\u:\W$ \[$reset\]"
+export PS1="\[$green\]\u@\h\[$reset\]:\[$blue\]\W$\[$reset\] "
 
 # Set Initial Working Diretory
 cd ~
