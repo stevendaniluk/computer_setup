@@ -16,7 +16,7 @@ export EDITOR='nano -w'
 
 # Use thefuck package for annoying command line mistakes
 eval $(thefuck --alias)
-  
+
 # ------------------------------------------------------------
 # Shortcuts
 # ------------------------------------------------------------
@@ -26,7 +26,7 @@ alias ...='cd ../../'                       # Go back 2 directory levels
 alias ....='cd ../../../'                   # Go back 3 directory levels
 alias .....='cd ../../../../'               # Go back 4 directory levels
 
-alias update_all='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
+alias update_all='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
 
 # Function for formatting .h, .hpp, and .cpp files with clang
 function format_cpp_code() {
