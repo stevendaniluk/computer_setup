@@ -30,6 +30,7 @@ $SUDO apt install -y \
   clang-format \
   cloc \
   cmake \
+  curl \
   git \
   gnome-tweak-tool \
   graphviz \
