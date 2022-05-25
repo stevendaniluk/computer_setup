@@ -59,11 +59,6 @@ pip install \
   numpy \
   thefuck
 
-SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-
-# Add the terminator config file
-cp -r $SRC_DIR/config/terminator ~/.config/
-
 # Lines below are for optional Atom editor installation
 # wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | $SUDO apt-key add -
 # echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" | $SUDO tee /etc/apt/sources.list.d/atom.list
