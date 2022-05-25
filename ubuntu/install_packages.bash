@@ -31,6 +31,7 @@ $SUDO apt install -y \
   cloc \
   cmake \
   git \
+  gnome-tweak-tool \
   graphviz \
   htop \
   imagemagick \
