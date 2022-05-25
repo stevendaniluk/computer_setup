@@ -43,26 +43,3 @@ function format_cpp_code() {
         find $TARGET -type f \( -iname \*.h -o -iname \*.hpp -o -iname \*.cpp \) -exec echo Formatting {} \; -exec clang-format -i {} \;
     fi
 }
-
-# ------------------------------------------------------------
-# ROS Setup
-# ------------------------------------------------------------
-
-# Source the setup.bash
-#source /opt/ros/melodic/setup.bash
-#source ~/ros_ws/devel/setup.bash
-
-# Aliases
-alias rviz='rosrun rviz rviz'
-alias display_frames='rosrun tf view_frames && display frames.pdf'
-alias print_ros_network='printf "ROS_MASTER_URI: %s\nROS_HOSTNAME: %s\nROS_IP: %s\n" "$ROS_MASTER_URI" "$ROS_HOSTNAME" "$ROS_IP"'
-
-# Setup network (Master)
-#export ROS_MASTER_URI=http://localhost:11311
-#export ROS_HOSTNAME=192.168.0.0
-#export ROS_IP=192.168.0.0
-
-# Setup network (Host)
-#export ROS_MASTER_URI=http://192.168.0.2:11311
-#export ROS_HOSTNAME=192.168.1.233
-#export ROS_IP=192.168.1.233
