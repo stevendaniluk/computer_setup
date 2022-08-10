@@ -56,6 +56,7 @@ if [ "$SKIP_CASKS" == "0" ]; then
   echo "Installing all casks..."
   export HOMEBREW_CASK_OPTS="--appdir=/Applications"
   casks=(
+    1password
     arduino
     atom
     caffeine
