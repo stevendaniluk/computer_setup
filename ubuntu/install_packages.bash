@@ -35,6 +35,7 @@ $SUDO apt install -y \
   nmap \
   octave \
   openssh-server \
+  python3-pip \
   sshfs \
   sysstat \
   terminator \
@@ -46,7 +47,7 @@ $SUDO apt install -y \
   wireshark
 
 # Install python packages
-pip install \
+pip3 install \
   cantools \
   numpy \
   thefuck
