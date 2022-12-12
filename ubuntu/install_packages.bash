@@ -10,10 +10,6 @@ fi
 # Apt-get Installations
 ##############################
 
-# Prep for Sublime editor
-$SUDO wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | $SUDO apt-key add -
-$SUDO echo "deb https://download.sublimetext.com/ apt/stable/" | $SUDO tee /etc/apt/sources.list.d/sublime-text.list
-
 # Prep for Terminator
 # PPA taken from the install instructions on the terminator repo for Ubuntu 20.04
 $SUDO add-apt-repository ppa:mattrose/terminator
@@ -44,7 +40,6 @@ $SUDO apt install -y \
   octave \
   openssh-server \
   sshfs \
-  sublime-text \
   sysstat \
   terminator \
   thefuck \
