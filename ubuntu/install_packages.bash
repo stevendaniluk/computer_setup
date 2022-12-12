@@ -10,10 +10,6 @@ fi
 # Apt-get Installations
 ##############################
 
-# Prep for Terminator
-# PPA taken from the install instructions on the terminator repo for Ubuntu 20.04
-$SUDO add-apt-repository ppa:mattrose/terminator
-
 # Update and upgrade!
 $SUDO sudo apt update
 $SUDO apt upgrade -y
