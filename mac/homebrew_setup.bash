@@ -69,6 +69,8 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     mas
     nmap
     octave
+    protonmail-bridge
+    protonvpn
     slack
     spectacle
     speedtest-cli
