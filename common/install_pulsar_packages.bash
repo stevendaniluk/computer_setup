@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# Install some additional packages for the Atom editor
-echo "Installing Atom editor packages"
-apm install \
+# Install some additional packages for the Pulsar editor
+echo "Installing Pulsar editor packages"
+ppm install \
   file-types \
   highlight-selected \
   language-cmake \

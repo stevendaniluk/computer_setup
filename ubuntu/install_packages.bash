@@ -51,9 +51,3 @@ pip3 install \
   cantools \
   numpy \
   thefuck
-
-# Lines below are for optional Atom editor installation
-# wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | $SUDO apt-key add -
-# echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" | $SUDO tee /etc/apt/sources.list.d/atom.list
-# $SUDO sudo apt update
-# $SUDO apt install -y atom

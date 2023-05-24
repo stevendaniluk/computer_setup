@@ -71,6 +71,7 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     octave
     protonmail-bridge
     protonvpn
+    pulsar
     slack
     spectacle
     speedtest-cli
