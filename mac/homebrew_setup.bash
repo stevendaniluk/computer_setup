@@ -58,6 +58,7 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     cmake
     discord
     dropbox
+    ffmpeg
     flash
     flux
     forefox
@@ -72,8 +73,8 @@ if [ "$SKIP_INSTALL" == "0" ]; then
     protonmail-bridge
     protonvpn
     pulsar
+    rectangle
     slack
-    spectacle
     speedtest-cli
     ssh-copy-id
     sublime-text
