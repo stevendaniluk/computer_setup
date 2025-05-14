@@ -28,6 +28,27 @@ alias .....='cd ../../../../'               # Go back 4 directory levels
 
 alias update_all='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y'
 
+# Undo all commits on the current branch
+alias git_reset_all='git reset --soft `git merge-base HEAD main`'
+
+setup_vcan_interface() {
+    local interface_name=${1:-vcan0} # Default interface name is vcan0
+
+    # If the interface doesn't exist, add it
+    if ! ip link show "$interface_name" &>/dev/null; then
+        # Load the vcan kernel module if not already loaded
+        if ! lsmod | grep -q "^vcan"; then
+            sudo modprobe vcan
+        fi
+
+        sudo ip link add dev "$interface_name" type vcan
+    fi
+
+    sudo ip link set up "$interface_name"
+    echo "Virtual CAN interface '$interface_name' is now up."
+}
+
+
 # Function for formatting .h, .hpp, and .cpp files with clang
 function format_cpp_code() {
     TARGET=${1%/}
