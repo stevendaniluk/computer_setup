@@ -1,0 +1,35 @@
+{
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "git.confirmSync": false,
+  "editor.scrollBeyondLastLine": false,
+  "git.allowForcePush": true,
+  "git.confirmForcePush": false,
+  "extensions.ignoreRecommendations": true,
+  "editor.renderWhitespace": "all",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "files.insertFinalNewline": true,
+  "editor.occurrencesHighlight": "multiFile",
+  "explorer.confirmDragAndDrop": false,
+  "cSpell.customDictionaries": {
+
+  },
+  "cSpell.languageSettings": [
+    {
+      "languageId": "rust",
+      "includeRegExpList": [
+        "CStyleComment",
+      ]
+    }
+  ],
+  "terminal.integrated.commandsToSkipShell": [
+    "matlab.interrupt"
+  ],
+  "MATLAB.showFeatureNotAvailableError": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+}
